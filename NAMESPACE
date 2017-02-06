@@ -1,0 +1,4 @@
+export(prob, corr, quiz2,
+       distr, cat1, cont1, quiz3,
+       cat2, cont2, quiz4,
+       ANOVA, surv, quiz5, final)

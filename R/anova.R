@@ -1,0 +1,23 @@
+ANOVA <- function()
+  {
+    year <- round(runif(1,1980,2012))
+    g <- sample(3:6,1)
+    mark <- drawMarker()
+    writeLines(strwrap(paste("A ",year," study investigated the effects of a variety of treatments on ",mark$marker," levels.  The study had one placebo group and ",g-1," treatment groups (Treatments A-",LETTERS[g-1],").",sep="")))
+    writeLines(strwrap(paste("a) If the investigators wanted to test the hypothesis that the mean ",mark$marker," levels were the same in each of the ",g," groups, what method would they use?",sep="")))
+    writeLines(strwrap(paste("b) If the investigators wanted to test the hypothesis that the mean ",mark$marker," levels were the same in the placebo group and in the 'Treatment A' group, as well as for 'Treatment A' vs. 'Treatment B', and so on for all possible comparisons, what cutoff should they compare each p-value to in order to maintain the overall probability of a Type I error at 5%?",sep="")))
+    cutoff <- sample(1:5,1)/100
+    s <- sample(1:choose(g,2),1)
+    writeLines(strwrap(paste("c) Suppose that the investigators carried out the hypothesis tests described in part b) and obtained ",s," results for which the p-value was below ",cutoff,".  What is the false discovery rate?",sep="")))
+    rss1 <- round(200*runif(1,.8,1.5)*mark$SD,1)
+    r2 <- runif(1)
+    rss0 <- round(rss1*(1+r2),1)
+    writeLines(strwrap(paste("d) Suppose that the investigators fit a null model in which all groups had the same mean ",mark$marker," levels and obtained a residual sum of squares of ",rss0,".  When they fit a more complicated model in which each group was allowed to have its own mean, they obtained a residual sum of squares of ",rss1,".  What percent of the variability were the investigators able to explain in their experiment?",sep="")))
+    cat("\n\n")
+    readline("Press <Enter> to reveal answers")
+    cat("\n\n")
+    cat("a) ANOVA\n")
+    cat("b) ",round(.05/choose(g,2),4),"\n",sep="")
+    cat("c) ",round(cutoff*choose(g,2)/s,4),"\n",sep="")
+    cat("d) ",round(100*(rss0-rss1)/rss0,1),"%\n",sep="")
+  }
