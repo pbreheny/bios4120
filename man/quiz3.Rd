@@ -4,7 +4,7 @@
 \usage{
   quiz3()
 }
-\details{
+\description{
   This function essentially just calls \code{distr()} for a question
   about distributions, \code{cat1()} for a one-sample categorical data
   question, or \code{cont1()} for a one-sample continuous data

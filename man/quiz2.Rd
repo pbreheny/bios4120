@@ -4,7 +4,7 @@
 \usage{
   quiz2()
 }
-\details{
+\description{
   This function essentially just calls \code{prob()} for a probability
   question or \code{corr()} for a correlation question.
 }

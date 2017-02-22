@@ -1,6 +1,9 @@
 \name{prob}
 \alias{prob}
-\title{Generate a probability question}
+\title{Probability}
 \usage{
   prob()
+}
+\description{
+Randomly generates a probability question.
 }

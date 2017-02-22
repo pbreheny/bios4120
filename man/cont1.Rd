@@ -4,3 +4,6 @@
 \usage{
   cont1()
 }
+\description{
+Randomly generates a one-sample continuous data problem.
+}
