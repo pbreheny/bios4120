@@ -4,13 +4,19 @@ This R package is for students of my BIOS:4120 class.  To get extra practice/exp
 
 ## Install
 
-The easiest way to install is via the `devtools` package.  This is not installed by default, so to install both packages, submit the following into R:
+To install on a Windows machine, submit the following to R:
 
 ```
-install.packages('devtools')
-library(devtools)
-install_github('pbreheny/bios4120')
+install.packages("https://github.com/pbreheny/bios4120/archive/bios4120_1.0-0.zip")
 ```
+
+To install on a Mac or Windows machine:
+
+```
+install.packages("https://github.com/pbreheny/bios4120/archive/bios4120_1.0-0.tar.gz")
+```
+
+Alternatively, you can install with the `devtools` package using `install_github('pbreheny/bios4120')`.
 
 ## Usage
 
