@@ -1,0 +1,3 @@
+#!/bin/bash
+cat R/* >> generator.R
+mv generator.R ~/web/misc/generator.R
