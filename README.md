@@ -4,12 +4,11 @@ This R package is for students of my BIOS:4120 class.  To get extra practice/exp
 
 ## Install
 
-The easiest way to install is via the `devtools` package.  This is not installed by default, so to install both packages, submit the following into R:
+The easiest way to install is via the `remotes` package.  This is not installed by default, so to install both packages, submit the following into R:
 
 ```
-install.packages('devtools')
-library(devtools)
-install_github('pbreheny/bios4120')
+install.packages('remotes')
+remotes::install_github('pbreheny/bios4120')
 ```
 
 ## Usage
