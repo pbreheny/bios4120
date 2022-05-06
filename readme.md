@@ -1,6 +1,8 @@
 # bios4120
 
-This R package is for students of my BIOS:4120 class.  To get extra practice/experience with common problems, this package provides a random question generator. To use it, you must have R installed on your computer.
+This R package is for students of my BIOS:4120 class. To get extra practice/experience with common problems, this package provides a random question generator. To use it, you must have R installed on your computer.
+
+To use the random question generator through a web interface, try the [Shiny app](https://ph-ivshiny.iowa.uiowa.edu/pbreheny/random-question-generator/) instead.
 
 ## Install
 
