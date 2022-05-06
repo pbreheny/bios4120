@@ -1,5 +1,10 @@
 # bios4120
 
+<!-- badges: start -->
+[![GitHub version](https://img.shields.io/static/v1?label=GitHub&message=1.1.1&color=blue&logo=github)](https://github.com/pbreheny/bios4120)
+[![R-CMD-check](https://github.com/pbreheny/bios4120/workflows/R-CMD-check/badge.svg)](https://github.com/pbreheny/bios4120/actions)
+<!-- badges: end -->
+
 This R package is for students of my BIOS:4120 class. To get extra practice/experience with common problems, this package provides a random question generator. To use it, you must have R installed on your computer.
 
 To use the random question generator through a web interface, try the [Shiny app](https://ph-ivshiny.iowa.uiowa.edu/pbreheny/random-question-generator/) instead.
