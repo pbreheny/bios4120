@@ -8,7 +8,7 @@ bayes <- function() {
   pAoB <- pA + pB - pAB
   
   writeLines("")
-  writeLines(strwrap(paste0("The probablity of A is ", round(pA, 3),", the probability of B given A is ", round(pB.A, 3),", and the probability of B given A-complement (i.e., given that A does not happen) is ", round(pB.Ac, 3), ".")))
+  writeLines(strwrap(paste0("The probability of A is ", round(pA, 3),", the probability of B given A is ", round(pB.A, 3),", and the probability of B given A-complement (i.e., given that A does not happen) is ", round(pB.Ac, 3), ".")))
   writeLines("")
   writeLines(strwrap("a) What is the probability of A and B?"))
   writeLines(strwrap("b) What is the probability of A given B?"))

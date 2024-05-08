@@ -1,7 +1,7 @@
 # bios4120
 
 <!-- badges: start -->
-[![GitHub version](https://img.shields.io/static/v1?label=GitHub&message=1.1.1&color=blue&logo=github)](https://github.com/pbreheny/bios4120)
+[![GitHub version](https://img.shields.io/static/v1?label=GitHub&message=1.1.2&color=blue&logo=github)](https://github.com/pbreheny/bios4120)
 [![R-CMD-check](https://github.com/pbreheny/bios4120/workflows/R-CMD-check/badge.svg)](https://github.com/pbreheny/bios4120/actions)
 <!-- badges: end -->
 

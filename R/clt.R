@@ -13,7 +13,7 @@ clt <- function() {
   out("Suppose that, for individuals in a certain population, levels of ", mark$marker, " are normally distributed with a mean of ", m, " and a standard deviation of ", SD, ".  ",
       "If we take a sample of ", n, " individuals,")
   out("a) What is the probability that the mean ", mark$marker," level is ", c("below ", "above ")[s1], cut1, "?")
-  out("b) What is the probability that the mean ", mark$marker," level ", c("within ", "more than ")[s2], cut2, c(" of"," away from")[s2], " the population mean?")
+  out("b) What is the probability that the mean ", mark$marker," level is ", c("within ", "more than ")[s2], cut2, c(" of"," away from")[s2], " the population mean?")
   out("c) What two values contain the middle ", cut3, " percent of sample means?")
 
   cat("\n\n")
@@ -22,7 +22,7 @@ clt <- function() {
 
   alpha <- 2*pnorm(-cut2/SE)
   z <- qnorm((1-cut3/100)/2)
-  out("a) ", round(100*pnorm(cut1, m, SE, lower.tail=(s1==1)), 1))
-  out("b) ", round(100*ifelse(s2==1, 1-alpha, alpha), 1))
+  out("a) ", round(100*pnorm(cut1, m, SE, lower.tail=(s1==1)), 1), '%')
+  out("b) ", round(100*ifelse(s2==1, 1-alpha, alpha), 1), '%')
   out("c) ", paste(round(m + c(1,-1)*z*SE, 1), collapse=", "))
 }

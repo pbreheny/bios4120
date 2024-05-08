@@ -15,7 +15,7 @@ prob <- function() {
   given.num <- c(pAB, pAoB, pA.B)
   
   writeLines("")
-  writeLines(strwrap(paste0("The probablity of A is ", round(pA, 3),", the probability of B is ", round(pB, 3),", and the probability of ", given.txt[type], " is ", round(given.num[type], 3), ".")))
+  writeLines(strwrap(paste0("The probability of A is ", round(pA, 3),", the probability of B is ", round(pB, 3),", and the probability of ", given.txt[type], " is ", round(given.num[type], 3), ".")))
   writeLines("")
   for (i in 1:2) {
     j <- setdiff(1:3, type)[i]
